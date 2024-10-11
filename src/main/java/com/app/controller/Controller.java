@@ -31,6 +31,11 @@ public class Controller {
     public Task create(@RequestBody Task task){
     return service.createTask(task);
     }
+    /* {
+        "title": "buy groceries",
+        "description": "buy milk, bread, and eggs",
+        "status": true
+    }*/
 
     @PutMapping(consumes = {MediaType.APPLICATION_JSON_VALUE},//request
                 produces = {MediaType.APPLICATION_JSON_VALUE}) //response formated
